@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ongajong.tourismv2.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="148dp"
+        android:text="Hello World!"
+        android:id="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_Weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="85dp"
+        android:layout_toStartOf="@+id/textView"
+        android:text="Weather" />
+
+    <Button
+        android:id="@+id/btn_Map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_Weather"
+        android:layout_alignBottom="@+id/btn_Weather"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="42dp"
+        android:text="Enter Location" />
+
+    <Button
+        android:id="@+id/btn_Scroller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_Weather"
+        android:layout_below="@+id/btn_Weather"
+        android:layout_marginTop="78dp"
+        android:text="See Location" />
+
+    <Button
+        android:id="@+id/btn_preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_Scroller"
+        android:layout_alignBottom="@+id/btn_Scroller"
+        android:layout_alignStart="@+id/btn_Map"
+        android:text="Preferences" />
+
+</RelativeLayout>
