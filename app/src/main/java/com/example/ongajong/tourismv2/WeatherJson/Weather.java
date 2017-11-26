@@ -1,10 +1,12 @@
-package com.example.ongajong.tourismv2;
+package com.example.ongajong.tourismv2.WeatherJson;
 
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.widget.TextView;
+
+import com.example.ongajong.tourismv2.R;
 
 public class Weather extends AppCompatActivity {
 

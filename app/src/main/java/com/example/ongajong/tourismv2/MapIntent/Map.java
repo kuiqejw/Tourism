@@ -1,4 +1,4 @@
-package com.example.ongajong.tourismv2;
+package com.example.ongajong.tourismv2.MapIntent;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.example.ongajong.tourismv2.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;

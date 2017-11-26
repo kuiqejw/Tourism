@@ -6,7 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-    public class MainActivity extends AppCompatActivity {
+import com.example.ongajong.tourismv2.MapIntent.MapActivity;
+import com.example.ongajong.tourismv2.RecyclerView.RecyclerViewActivity;
+import com.example.ongajong.tourismv2.WeatherJson.Weather;
+
+public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

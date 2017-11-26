@@ -1,4 +1,4 @@
-package com.example.ongajong.tourismv2;
+package com.example.ongajong.tourismv2.WeatherJson;
 
 import android.os.AsyncTask;
 import android.util.Log;

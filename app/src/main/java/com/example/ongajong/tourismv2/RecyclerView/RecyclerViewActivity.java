@@ -1,4 +1,4 @@
-package com.example.ongajong.tourismv2;
+package com.example.ongajong.tourismv2.RecyclerView;
 
 /**
  * Created by ongajong on 26/11/2017.
@@ -6,13 +6,12 @@ package com.example.ongajong.tourismv2;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
+
+import com.example.ongajong.tourismv2.R;
+import com.example.ongajong.tourismv2.RecyclerView.Album;
+import com.example.ongajong.tourismv2.RecyclerView.AlbumAdaptor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,8 +44,9 @@ public class RecyclerViewActivity extends Activity {
         destinations.add(new Album("Marina Bay Sands", R.drawable.mbs));
         destinations.add(new Album("National Orchid Garden", R.drawable.nationalorchid));
         destinations.add(new Album("Universal Studios Singapore", R.drawable.sentosa));
-        destinations.add(new Album("Singapoe Flyer", R.drawable.singaporeflyer));
-        destinations.add(new Album("Singapoe Zoo", R.drawable.zoo4));
+        destinations.add(new Album("Singapore Flyer", R.drawable.singaporeflyer));
+        destinations.add(new Album("Singapore Zoo", R.drawable.zoo4));
+        destinations.add(new Album("Buddha Tooth Relic Temple", R.drawable.buddhatemple));
     }
 
     private void initializeAdapter(){
