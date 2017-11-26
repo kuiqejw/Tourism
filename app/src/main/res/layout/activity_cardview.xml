@@ -10,6 +10,7 @@
         android:layout_width="fill_parent"
         android:layout_height="245dp"
         android:layout_gravity="center_horizontal"
+        android:id="@+id/cv"
         cardview:cardElevation="4dp"
         cardview:cardCornerRadius="5dp">
         <LinearLayout
@@ -20,7 +21,7 @@
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="190dp"
-                android:id="@+id/imageView"
+                android:id="@+id/destinationphoto"
                 android:scaleType="centerCrop" />
             <TextView
                 android:layout_width="fill_parent"
@@ -28,7 +29,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="#333333"
                 android:text="Photo Title"
-                android:id="@+id/textView"
+                android:id="@+id/destinationname"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="5dp" />
         </LinearLayout>

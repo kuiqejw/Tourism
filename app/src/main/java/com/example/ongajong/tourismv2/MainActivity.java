@@ -45,7 +45,7 @@ import android.widget.Button;
 
         private void launchTour() {
 
-            Intent intent = new Intent(this, Weather.class);
+            Intent intent = new Intent(this, RecyclerViewActivity.class);
             startActivity(intent);
         }
 

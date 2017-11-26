@@ -1,41 +1,34 @@
 package com.example.ongajong.tourismv2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by ongajong on 26/11/2017.
  */
 
 public class Album {
-    private String travelRoute;
-    private String travelCost;
-    private String travelTime;
-    private int travelIcon;
+    String name;
+    int photoId;
 
-    public Album(String travelRoute, String travelCost, String travelTime, int travelIcon){
-        this.travelCost = travelCost;
-        this.travelIcon = travelIcon;
-        this.travelRoute = travelRoute;
-        this.travelTime = travelTime;
-    }
-    public int getTravelIcon(){
-        return travelIcon;
-    }
-    public String getTravelRoute(){
-        return travelRoute;
-    }
-    public void setTravelRoute(String travelRoute){
-        this.travelRoute = travelRoute;
-    }
-    public String getTravelTime(){
-        return travelTime;
-    }
-    public void setTravelTime(String travelTime){
-        this.travelTime = travelTime;
-
-    }public String getTravelCost(){
-        return travelCost;
-    }
-    public void setTravelCost(String travelCost){
-        this.travelCost = travelCost;
+    Album(String name, int photoId) {
+        this.name = name;
+        this.photoId = photoId;
     }
 
 }
+/*
+
+    private List<Album> Destinations;
+
+    private void initializeData() {
+        ArrayList<Object> destinations = new ArrayList<>();
+        destinations.add(new Album("Botanic Gardens", R.drawable.botanicgardens));
+        destinations.add(new Album("Gardens By the bay", R.drawable.gardensbybay));
+        destinations.add(new Album("Marina Bay Sands", R.drawable.mbs));
+        destinations.add(new Album("National Orchid Garden", R.drawable.nationalorchid));
+        destinations.add(new Album("Universal Studios Singapore", R.drawable.sentosa));
+        destinations.add(new Album("Singapoe Flyer", R.drawable.singaporeflyer));
+        destinations.add(new Album("Singapoe Zoo", R.drawable.zoo4));
+    }
+*/
