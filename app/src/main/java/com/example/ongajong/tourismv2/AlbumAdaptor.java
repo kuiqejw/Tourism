@@ -61,7 +61,7 @@ public class AlbumAdaptor extends RecyclerView.Adapter<AlbumAdaptor.AlbumViewHol
 
     @Override
     public int getItemCount() {
-        return 0;
-        //return destinations== null ? 0 : destinations.size();
+        //return 0;
+        return destinations== null ? 0 : destinations.size();
     }
 }

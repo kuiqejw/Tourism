@@ -19,7 +19,7 @@ import java.util.List;
 
 public class RecyclerViewActivity extends Activity {
 
-    private ArrayList<Album> destinations;
+    private List<Album> destinations;
     private RecyclerView rv;
 
     @Override
@@ -39,7 +39,7 @@ public class RecyclerViewActivity extends Activity {
     }
 
     private void initializeData() {
-        ArrayList<Object> destinations = new ArrayList<>();
+        destinations = new ArrayList<>();
         destinations.add(new Album("Botanic Gardens", R.drawable.botanicgardens));
         destinations.add(new Album("Gardens By the bay", R.drawable.gardensbybay));
         destinations.add(new Album("Marina Bay Sands", R.drawable.mbs));
@@ -50,7 +50,7 @@ public class RecyclerViewActivity extends Activity {
     }
 
     private void initializeAdapter(){
-        AlbumAdaptor adapter = new AlbumAdaptor(destinations);
+        AlbumAdaptor adapter = new AlbumAdaptor((ArrayList<Album>) destinations);
         rv.setAdapter(adapter);
     }
 }
