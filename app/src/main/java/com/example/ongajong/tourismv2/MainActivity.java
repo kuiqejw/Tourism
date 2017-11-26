@@ -30,6 +30,13 @@ import android.widget.Button;
             }
 
         });
+        btn_map.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                launchMap();
+            }
+
+        });
         }
         catch (Exception e){
             e.printStackTrace();
@@ -44,6 +51,10 @@ import android.widget.Button;
 
         private void launchWeather() {
         Intent intent = new Intent(this, Weather.class);
+        startActivity(intent);
+        }
+        private void launchMap() {
+        Intent intent = new Intent(this, MapActivity.class);
         startActivity(intent);
     }
 }

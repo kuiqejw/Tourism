@@ -8,11 +8,8 @@ import android.widget.TextView;
 
 public class Weather extends AppCompatActivity {
 
-    // Project Created by Ferdousur Rahman Shajib
-    // www.androstock.com
 
-
-    TextView cityField, detailsField, currentTemperatureField, humidity_field, pressure_field, weatherIcon, updatedField;
+    TextView cityField, detailsField, currentTemperatureField, weatherIcon, updatedField;
 
     Typeface weatherFont;
 
@@ -40,14 +37,12 @@ public class Weather extends AppCompatActivity {
                 updatedField.setText(weather_updatedOn);
                 detailsField.setText(weather_description);
                 currentTemperatureField.setText(weather_temperature);
-
-                //humidity_field.setText(new StringBuilder().append("Humidity: ").append(weather_humidity).toString());
-                //pressure_field.setText(new StringBuilder().append("Pressure: ").append(weather_pressure).toString());
                 weatherIcon.setText(Html.fromHtml(weather_iconText));
 
             }
         });
-        asyncTask.execute("37.871853", "-122.258423"); //  asyncTask.execute("Latitude", "Longitude")
+        //asyncTask.execute("37.871853", "-122.258423"); //  asyncTask.execute("Latitude", "Longitude")
+        asyncTask.execute("1.250111", "103.830933"); //  asyncTask.execute("Latitude", "Longitude")
 
 
 

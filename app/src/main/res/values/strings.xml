@@ -10,4 +10,8 @@
     <string name="weather_snowy">&#xf01b;</string>
     <string name="weather_thunder">&#xf01e;</string>
     <string name="weather_drizzle">&#xf01c;</string>
+    <string name="title_activity_map">Map</string>
+    <string name="satellite_view">Satellite View</string>
+    <string name="map_view">Map View</string>
+    <string name="hybrid_view">Hybrid View</string>
 </resources>
