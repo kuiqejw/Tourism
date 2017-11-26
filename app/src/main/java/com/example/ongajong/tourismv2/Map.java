@@ -23,7 +23,10 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.arlib.floatingsearchview.FloatingSearchView;
-import com.arlib.floatingsearchview.suggestions.model.SearchSuggestion;
+
+/*
+This is where the map is generated
+ */
 
 public class Map extends Fragment implements OnMapReadyCallback {
 
@@ -37,8 +40,8 @@ public class Map extends Fragment implements OnMapReadyCallback {
             {"Supreme Court & City Hall", "1.2899018", "103.8509197", "City Hall", "Court", "Supreme Court", "Singapore Court"},
             {"Ion Orchard", "1.3040258", "103.8319648", "Ion", "ion", "Orchard"}, {"Botanic Gardens", "1.3138397", "103.8159136", "Botanic", "Gardens"},
             {"Peranakan Museum", "1.2943669", "103.8490391", "Peranakan", "Museum"}};
-    private double lat = 1.3521;
-    private double lng = 103.8198;//I would like to say first that longitude is terrible
+    private double lat = 1.2826;
+    private double lng = 103.8584;//I would like to say first that longitude is terrible
     private LatLng latlng = new LatLng(lat,lng);
     private String input;
     public String result;
@@ -138,9 +141,9 @@ public class Map extends Fragment implements OnMapReadyCallback {
         else val = dictionary[list_no][0];
         latlng = new LatLng(lat,lng);
 //        val = Integer.toString(min) + " " + val;
-        mMap.addMarker(new MarkerOptions().position(latlng));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(latlng));
-        mMap.animateCamera(CameraUpdateFactory.zoomTo(16.0f));
+        mMap.addMarker(new MarkerOptions().position(latlng).title("Marina Bay Sands"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latlng, 15));
+        mMap.animateCamera(CameraUpdateFactory.zoomTo(12),2000,null);
         return val;
     }
 
